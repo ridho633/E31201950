@@ -1,0 +1,42 @@
+package Bkpm2;
+import java.util.Scanner;
+/**
+ *
+ * @author APRILITA AJENG
+ */
+public class NestedIf {
+    
+public static void main(String[] args){
+Scanner input = new Scanner(System.in);
+    System.out.println("===============Program Kelulusan TB===============");
+    System.out.print("Masukkan Nama Anda : ");
+    String nama = input.nextLine();
+    System.out.print("Masukkan NIM Anda  : ");
+    String nim = input.next();
+    System.out.print("Jenis Kelamin(L/P) : ");
+    String jk = input.next();
+    System.out.print("Masukkan Tinggi Badan : ");
+    int tb = input.nextInt();
+    
+    if ("L".equals(jk)){
+        if (tb <=170){
+            System.out.println("Anda Gagal");
+        } else {
+            System.out.println("Selamat Anda Lulus!!!");
+        }
+    }
+    else if ("P".equals(jk)){
+        if (tb <=160){
+            System.out.println("Anda Gagal");
+        } else {
+            System.out.println("Selamat Anda Lulus!!!");
+        }
+    }
+    else {
+        System.out.println("Error!!!!!!");
+    }
+    System.out.println("==================================================");
+}    
+}
+
+
